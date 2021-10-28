@@ -15,7 +15,6 @@
        :active="active.product_open"
         v-on:closeProductOpen="closeProductOpen()"
        />
-    <Popup/>
   </div>
 </template>
 
@@ -23,11 +22,10 @@
 
 import ProductCard from "../components/ProductCard";
 import ProductDescriptionOpen from "./ProductDescriptionOpen";
-import Popup from "../components/Popup";
 import {mapActions} from 'vuex'
 export default {
   name: 'Home',
-  components: {Popup, ProductCard, ProductDescriptionOpen},
+  components: {ProductCard, ProductDescriptionOpen},
   data(){
     return {
        product: null,

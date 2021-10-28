@@ -20,18 +20,6 @@
 </template>
 
 <script>
-
-export default {
-
-  methods: {
-    onSubmit() {
-
-    }
-  }
-}
-
-
-
 </script>
 
 

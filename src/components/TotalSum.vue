@@ -3,14 +3,11 @@
     <p>Total: {{totalProductSum}}$</p>
     <button class="total">Buy</button>
   </div>
-  <Popup/>
 </template>
 
 <script>
-import Popup from "./Popup";
 export default {
   name: "TotalSum",
-  components: {Popup},
   computed: {
     totalProductSum(){
      return this.$store.getters.totalProductSum

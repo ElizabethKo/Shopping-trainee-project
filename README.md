@@ -1,4 +1,11 @@
-# shoping
+# Shopping trainee project
+This's a pet-project. Small e-commerce. Here I use:
+<ul>
+<li>scss;</li>
+<li>vuex;</li>
+<li>axios;</li>
+<li>vue-router.</li>
+</ul>
 
 ## Project setup
 ```
@@ -6,6 +13,11 @@ npm install
 ```
 
 ### Compiles and hot-reloads for development
+
+```
+json-server --watch src/vuex/db.json --port=3000
+```
+
 ```
 npm run serve
 ```
