@@ -1,18 +1,66 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="product-container">
+      <div class="list">
+        <ProductCard
+        v-for="product in this.$store.state.items"
+        :key="product.id"
+        :product="product"
+        v-on:view-product="viewProduct($event)"
+        />
+        </div>
+    </div>
+    <ProductDescriptionOpen
+       :product="product"
+       :active="active.product_open"
+        v-on:closeProductOpen="closeProductOpen()"
+       />
+    <Popup/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
+import ProductCard from "../components/ProductCard";
+import ProductDescriptionOpen from "./ProductDescriptionOpen";
+import Popup from "../components/Popup";
+import {mapActions} from 'vuex'
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
+  components: {Popup, ProductCard, ProductDescriptionOpen},
+  data(){
+    return {
+       product: null,
+      active: {
+        product_open: false
+      },
+
+    }
+  },
+  methods:{
+    ...mapActions([
+        'GET_ITEMS_FROM_API'
+    ]),
+    viewProduct(product){
+      this.product = product
+      this.active.product_open = true
+    },
+    closeProductOpen() {
+      this.active.product_open = false
+    }
+  },
+  mounted() {
+    this. GET_ITEMS_FROM_API()
   }
 }
 </script>
+
+
+<style>
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+</style>
