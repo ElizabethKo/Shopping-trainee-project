@@ -43,7 +43,7 @@ export default {
   h3 {
     color: black;
     font-size: 20px;
-
+    font-family: 'Architects Daughter', cursive;
   }
 
 }

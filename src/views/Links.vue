@@ -24,6 +24,7 @@ export default {
 </script>
 
 <style scoped>
+
 .link h2 {
   background: #f4f4f4;
   padding: 20px;
@@ -34,7 +35,7 @@ export default {
   color: orange;
   letter-spacing: 4px;
   transition: all 0.25s ease;
-
+  font-family: 'Architects Daughter', cursive;
 }
 .link h2:hover {
   background: #ddd;

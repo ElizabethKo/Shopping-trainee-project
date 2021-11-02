@@ -36,11 +36,9 @@
 <script>
 import {mapActions} from "vuex";
 
-
 export default {
   name: "ProductDescriptionOpen",
   props: ['product', 'active'],
-
   methods: {
     ...mapActions(['addToCart', 'removeFromCart']),
 
@@ -75,6 +73,9 @@ export default {
   &.show {
     display: block;
   }
+}
+h3{
+  font-family: 'Architects Daughter', cursive;
 }
 
 .open{
@@ -185,7 +186,6 @@ export default {
 
   p {
     color: gray;
-
   }
 }
 

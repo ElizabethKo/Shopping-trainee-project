@@ -29,6 +29,7 @@ export default {
   text-transform: uppercase;
   font-weight: bold;
   transition: all 0.25s ease;
+  font-family: 'Architects Daughter', cursive;
 
   &:hover {
     transform: scale(1.1, 1.1);

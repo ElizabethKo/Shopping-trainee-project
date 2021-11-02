@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <router-link to="/"><img src="./assets/home.png" alt="home" class="nav_image"></router-link>
-    <router-link to="/AboutUser"><img src="./assets/user.png" alt="AboutUser" class="nav_image"></router-link>
+    <router-link to="/Login"><img src="./assets/user.png" alt="Login" class="nav_image"></router-link>
     <router-link to="/links"><img src="./assets/link.png" alt="link" class="nav_image"></router-link>
     <router-link to="/cart"><img src="./assets/basket.png" alt="cart" class="nav_image" ></router-link>
   </div>

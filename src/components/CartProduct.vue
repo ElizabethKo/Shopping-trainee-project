@@ -48,6 +48,7 @@ export default {
 
   h1 {
     font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
   }
 }
 .delete-from-cart  {

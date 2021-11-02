@@ -1,12 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import AboutUser from "../views/AboutUser";
+import Login from "../views/Login";
 import ProductCard from "../components/ProductCard";
 import Links from "../views/Links";
 import CompanyDetails from "../views/CompanyDetails";
 import Cart from "../views/Cart"
 import CartProduct from "../components/CartProduct";
 import ProductDescriptionOpen from "../views/ProductDescriptionOpen";
+import CreateAccount from "../components/CreateAccount";
 
 const routes = [
   {
@@ -39,9 +40,9 @@ const routes = [
   },
 
   {
-    path: '/AboutUser',
-    name: 'AboutUser',
-    component: AboutUser
+    path: '/Login',
+    name: 'Login',
+    component: Login
   },
   {
     path: '/cart',
@@ -53,6 +54,11 @@ const routes = [
     path: '/cartProduct',
     name: 'CartProduct',
     component: CartProduct
+  },
+  {
+    path: '/CreateAccount',
+    name: 'CreateAccount',
+    component: CreateAccount
   }
 ]
 
