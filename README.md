@@ -4,7 +4,8 @@ This's a pet-project. Small e-commerce. Here I use:
 <li>scss;</li>
 <li>vuex;</li>
 <li>axios;</li>
-<li>vue-router.</li>
+<li>vue-router;</li>
+<li>vuelidate</li>
 </ul>
 
 ## Project setup
